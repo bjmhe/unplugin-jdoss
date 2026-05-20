@@ -21,6 +21,41 @@ npm i -D -E unplugin-jdoss
 - **Build Tool Agnostic** - Built on [unplugin](https://github.com/unjs/unplugin) for universal compatibility across modern build tools
 - **Static Asset Deployment** - Eliminates the need for manual static asset deployment workflows
 
+## Usage
+
+```typescript
+/// vite.config.ts
+
+import path from "path";
+import VitePluginJdoss from "unplugin-jdoss/vite";
+import { defineConfig, searchForWorkspaceRoot, loadEnv } from "vite";
+
+export default defineConfig(({ mode }) => {
+  const workspaceRoot = searchForWorkspaceRoot(process.cwd())
+  const env = loadEnv(mode, workspaceRoot)
+
+  return {
+    base: `${env.VITE_BASE_URL}`,
+
+    plugins: [
+      mode === "production" &&
+        VitePluginJdoss({
+          localFullPath: path.resolve(workspaceRoot, "dist"),
+          access: env.VITE_OSS_ACCESS,
+          secret: env.VITE_OSS_SECRET,
+          site: "storage.jd.local",
+          cover: true,
+          timeout: "30000",
+          printCdnFile: false,
+          bucket: env.VITE_OSS_BUCKET,
+          folder: env.VITE_OSS_FOLDER,
+          ignoreRegexp: ""
+        })
+    ]
+  }
+})
+```
+
 ## License
 
 [MIT](./LICENSE) License © 2026-PRESENT [Benjamin He](https://github.com/bjmhe)
