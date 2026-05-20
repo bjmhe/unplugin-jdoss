@@ -12,7 +12,7 @@ import { Starter } from './index'
  * @example
  * ```ts
  * // rollup.config.js
- * import Starter from 'unplugin-starter/rollup'
+ * import Starter from 'unplugin-jdoss/rollup'
  *
  * export default {
  *   plugins: [Starter()],

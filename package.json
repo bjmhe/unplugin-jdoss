@@ -1,5 +1,5 @@
 {
-  "name": "unplugin-starter",
+  "name": "unplugin-jdoss",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.33.4",
@@ -7,13 +7,13 @@
   "author": "Kevin Deng <sxzz@sxzz.moe>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/sxzz",
-  "homepage": "https://github.com/sxzz/unplugin-starter#readme",
+  "homepage": "https://github.com/sxzz/unplugin-jdoss#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sxzz/unplugin-starter.git"
+    "url": "git+https://github.com/sxzz/unplugin-jdoss.git"
   },
   "bugs": {
-    "url": "https://github.com/sxzz/unplugin-starter/issues"
+    "url": "https://github.com/sxzz/unplugin-jdoss/issues"
   },
   "keywords": [
     "unplugin",
@@ -65,6 +65,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
+    "@jd/upload-oss-tools": "1.1.28",
     "unplugin": "^3.0.0"
   },
   "devDependencies": {
