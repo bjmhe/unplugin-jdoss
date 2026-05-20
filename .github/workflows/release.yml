@@ -15,18 +15,23 @@ jobs:
       id-token: write
 
     steps:
-      - name: Setup JS
-        uses: sxzz/workflows/setup-js@main
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup node
+        uses: actions/setup-node@v6
         with:
-          fetch-all: true
+          node-version: 26
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Generate GitHub Changelog
         run: pnpx changelogithub
         continue-on-error: true
-        if: ${{ inputs.github-release }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to NPM
-        run: pnpm -r publish --access public --no-git-checks ${{ inputs['tag'] && format('--tag {0}', inputs['tag']) || '' }}
-        if: ${{ inputs.publish }}
+        run: pnpm -r publish --access public --no-git-checks
