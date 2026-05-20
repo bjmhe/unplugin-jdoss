@@ -15,8 +15,11 @@ npm i -D -E unplugin-jdoss
 
 ## Features
 
-- Feature 1
-- Feature 2
+- 🚀 **Automatic OSS Upload** - Automatically uploads build artifacts to JD OSS after build completion via the `writeBundle` hook
+- 🔧 **Multi-Builder Support** - Works seamlessly with Vite, Webpack, Rspack, Rollup, Rolldown, esbuild, and Farm
+- ⚡ **Zero Configuration** - Integrates with `@jd/upload-oss-tools` out of the box, no manual deployment needed
+- 🎯 **Build Tool Agnostic** - Built on [unplugin](https://github.com/unjs/unplugin) for universal compatibility across modern build tools
+- 📦 **Static Asset Deployment** - Eliminates the need for manual static asset deployment workflows
 
 ## License
 
