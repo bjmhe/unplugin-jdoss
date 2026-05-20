@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: "0"
 
       - name: Install pnpm
         uses: pnpm/action-setup@v6
@@ -25,7 +27,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 26
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
 
       - name: Generate GitHub Changelog
         run: pnpx changelogithub
