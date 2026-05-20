@@ -1,6 +1,5 @@
 import { createUnplugin, type UnpluginInstance } from 'unplugin'
-
-const UploadOssPlugin = require("@jd/upload-oss-tools");
+import UploadOssPlugin from '@jd/upload-oss-tools';
 
 export const Starter: UnpluginInstance<any, false> =
   createUnplugin((options = {}) => {
@@ -8,6 +7,7 @@ export const Starter: UnpluginInstance<any, false> =
     return {
       name,
       writeBundle() {
+        // @ts-ignore
         const _ploadOssPlugin = new UploadOssPlugin(options)
         _ploadOssPlugin.upload();
       }
