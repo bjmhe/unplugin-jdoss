@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const vite: typeof Starter.vite;
 //#endregion
 export { vite as default, vite as "module.exports" };
+//# sourceMappingURL=vite.d.ts.map

@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const rspack: typeof Starter.rspack;
 //#endregion
 export { rspack as default, rspack as "module.exports" };
+//# sourceMappingURL=rspack.d.ts.map

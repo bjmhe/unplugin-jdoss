@@ -6,6 +6,8 @@ export default lib(
   },
   {
     attw: true,
+    minify: true,
     publint: true,
+    sourcemap: true,
   },
 )

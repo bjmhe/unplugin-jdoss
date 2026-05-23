@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const farm: typeof Starter.farm;
 //#endregion
 export { farm as default, farm as "module.exports" };
+//# sourceMappingURL=farm.d.ts.map

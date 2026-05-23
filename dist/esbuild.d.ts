@@ -15,3 +15,4 @@ import { Starter } from "./index.js";
 declare const esbuild: typeof Starter.esbuild;
 //#endregion
 export { esbuild as default, esbuild as "module.exports" };
+//# sourceMappingURL=esbuild.d.ts.map

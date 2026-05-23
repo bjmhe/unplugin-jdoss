@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const webpack: typeof Starter.webpack;
 //#endregion
 export { webpack as default, webpack as "module.exports" };
+//# sourceMappingURL=webpack.d.ts.map

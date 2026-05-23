@@ -1,23 +1,2 @@
-import { Starter } from "./index.js";
-//#region src/rollup.ts
-/**
-* This entry file is for Rollup plugin.
-*
-* @module
-*/
-/**
-* Rollup plugin
-*
-* @example
-* ```ts
-* // rollup.config.js
-* import Starter from 'unplugin-jdoss/rollup'
-*
-* export default {
-*   plugins: [Starter()],
-* }
-* ```
-*/
-const rollup = Starter.rollup;
-//#endregion
-export { rollup as default, rollup as "module.exports" };
+import{Starter as e}from"./index.js";const t=e.rollup;export{t as default,t as "module.exports"};
+//# sourceMappingURL=rollup.js.map

@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const rollup: typeof Starter.rollup;
 //#endregion
 export { rollup as default, rollup as "module.exports" };
+//# sourceMappingURL=rollup.d.ts.map

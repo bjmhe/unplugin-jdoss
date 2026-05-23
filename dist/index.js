@@ -1,13 +1,2 @@
-import UploadOssPlugin from "@jd/upload-oss-tools";
-import { createUnplugin } from "unplugin";
-//#region src/index.ts
-const Starter = createUnplugin((options) => {
-	return {
-		name: "unplugin-jdoss",
-		writeBundle() {
-			new UploadOssPlugin(options).upload();
-		}
-	};
-});
-//#endregion
-export { Starter };
+import e from"@jd/upload-oss-tools";import{createUnplugin as t}from"unplugin";const n=t(t=>({name:`unplugin-jdoss`,writeBundle(){new e(t).upload()}}));export{n as Starter};
+//# sourceMappingURL=index.js.map

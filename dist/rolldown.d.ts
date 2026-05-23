@@ -17,3 +17,4 @@ import { Starter } from "./index.js";
 declare const rolldown: typeof Starter.rolldown;
 //#endregion
 export { rolldown as default, rolldown as "module.exports" };
+//# sourceMappingURL=rolldown.d.ts.map

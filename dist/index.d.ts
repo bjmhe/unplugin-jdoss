@@ -62,3 +62,4 @@ interface Options {
 declare const Starter: UnpluginInstance<Options, false>;
 //#endregion
 export { Options, Starter };
+//# sourceMappingURL=index.d.ts.map
