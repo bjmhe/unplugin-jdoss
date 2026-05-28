@@ -55,14 +55,12 @@
     "node": ">=20.19.0"
   },
   "scripts": {
-    "lint": "eslint --cache .",
-    "lint:fix": "pnpm run lint --fix",
-    "build": "tsdown",
-    "dev": "tsdown --watch",
-    "test": "vitest",
-    "typecheck": "tsc --noEmit",
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
     "release": "bumpp",
-    "prerelease": "tsdown"
+    "prerelease": "vp run build"
   },
   "peerDependencies": {
     "@jd/upload-oss-tools": "1.1.28"
@@ -72,16 +70,13 @@
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.2",
-    "@sxzz/eslint-config": "^8.0.0",
-    "@sxzz/prettier-config": "^2.3.1",
     "@types/node": "^25.6.0",
     "bumpp": "^11.0.1",
-    "eslint": "^10.2.0",
-    "prettier": "^3.8.2",
     "publint": "^0.3.21",
     "tsdown": "^0.22.0",
     "tsdown-preset-sxzz": "^0.6.0",
-    "typescript": "^6.0.2"
-  },
-  "prettier": "@sxzz/prettier-config"
+    "tsnapi": "^0.3.3",
+    "typescript": "^6.0.2",
+    "vite-plus": "^0.1.22"
+  }
 }
