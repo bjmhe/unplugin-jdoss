@@ -26,33 +26,33 @@ npm i -D -E unplugin-jdoss
 ```typescript
 /// vite.config.ts
 
-import path from 'node:path'
-import VitePluginJdoss from 'unplugin-jdoss/vite'
-import { defineConfig, loadEnv, searchForWorkspaceRoot } from 'vite'
+import path from "node:path";
+import VitePluginJdoss from "unplugin-jdoss/vite";
+import { defineConfig, loadEnv, searchForWorkspaceRoot } from "vite";
 
 export default defineConfig(({ mode }) => {
-  const workspaceRoot = searchForWorkspaceRoot(process.cwd())
-  const env = loadEnv(mode, workspaceRoot)
+  const workspaceRoot = searchForWorkspaceRoot(process.cwd());
+  const env = loadEnv(mode, workspaceRoot);
 
   return {
     base: env.VITE_BASE_URL,
     plugins: [
-      mode === 'production' &&
+      mode === "production" &&
         VitePluginJdoss({
-          localFullPath: path.resolve(workspaceRoot, 'dist'),
+          localFullPath: path.resolve(workspaceRoot, "dist"),
           access: env.VITE_OSS_ACCESS,
           secret: env.VITE_OSS_SECRET,
-          site: 'storage.jd.local',
+          site: "storage.jd.local",
           cover: true,
-          timeout: '30000',
+          timeout: "30000",
           printCdnFile: false,
           bucket: env.VITE_OSS_BUCKET,
           folder: env.VITE_OSS_FOLDER,
-          ignoreRegexp: '',
+          ignoreRegexp: "",
         }),
     ],
-  }
-})
+  };
+});
 ```
 
 ## Ecology

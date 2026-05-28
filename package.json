@@ -1,29 +1,39 @@
 {
   "name": "unplugin-jdoss",
-  "type": "module",
   "version": "1.0.7",
-  "packageManager": "pnpm@10.33.4",
   "description": "A build plugin based on unplugin that automatically uploads files to JD OSS after build completion.",
-  "author": "Benjamin He <hi@bjmhe.me>",
-  "license": "MIT",
+  "keywords": [
+    "esbuild",
+    "farm",
+    "rolldown",
+    "rollup",
+    "rspack",
+    "unplugin",
+    "vite",
+    "webpack"
+  ],
   "homepage": "https://github.com/bjmhe/unplugin-jdoss#readme",
+  "bugs": {
+    "url": "https://github.com/bjmhe/unplugin-jdoss/issues"
+  },
+  "license": "MIT",
+  "author": "Benjamin He <hi@bjmhe.me>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bjmhe/unplugin-jdoss.git"
   },
-  "bugs": {
-    "url": "https://github.com/bjmhe/unplugin-jdoss/issues"
-  },
-  "keywords": [
-    "unplugin",
-    "vite",
-    "webpack",
-    "rspack",
-    "rollup",
-    "rolldown",
-    "esbuild",
-    "farm"
+  "files": [
+    "dist"
   ],
+  "type": "module",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*.d.ts",
+        "./*"
+      ]
+    }
+  },
   "exports": {
     ".": "./dist/index.js",
     "./api": "./dist/api.js",
@@ -36,23 +46,9 @@
     "./webpack": "./dist/webpack.js",
     "./package.json": "./package.json"
   },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*.d.ts",
-        "./*"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "engines": {
-    "node": ">=20.19.0"
   },
   "scripts": {
     "build": "vp pack",
@@ -61,9 +57,6 @@
     "check": "vp check",
     "release": "bumpp",
     "prerelease": "vp run build"
-  },
-  "peerDependencies": {
-    "@jd/upload-oss-tools": "1.1.28"
   },
   "dependencies": {
     "unplugin": "^3.0.0"
@@ -78,5 +71,12 @@
     "tsnapi": "^0.3.3",
     "typescript": "^6.0.2",
     "vite-plus": "^0.1.22"
-  }
+  },
+  "peerDependencies": {
+    "@jd/upload-oss-tools": "1.1.28"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "packageManager": "pnpm@10.33.4"
 }

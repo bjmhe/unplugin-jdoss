@@ -4,7 +4,7 @@
  * @module
  */
 
-import { Starter } from './index'
+import { Starter } from "./index";
 
 /**
  * Rolldown plugin
@@ -19,6 +19,6 @@ import { Starter } from './index'
  * }
  * ```
  */
-const rolldown = Starter.rolldown as typeof Starter.rolldown
-export default rolldown
-export { rolldown as 'module.exports' }
+const rolldown = Starter.rolldown as typeof Starter.rolldown;
+export default rolldown;
+export { rolldown as "module.exports" };
