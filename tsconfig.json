@@ -1,10 +1,5 @@
 {
   "extends": "./node_modules/@bjmhe/viteplus-preset/tsconfig.json",
-  "compilerOptions": {
-    "moduleDetection": "force",
-    "module": "preserve",
-    "moduleResolution": "bundler"
-  },
   "include": ["src", "tests"],
   "exclude": ["tests/fixtures"]
 }

@@ -64,7 +64,7 @@
     "unplugin": "^3.0.0"
   },
   "devDependencies": {
-    "@bjmhe/viteplus-preset": "^1.0.2",
+    "@bjmhe/viteplus-preset": "^1.0.3",
     "@types/node": "^25.6.0",
     "bumpp": "^11.0.1",
     "typescript": "^6.0.2",

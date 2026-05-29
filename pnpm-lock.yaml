@@ -15,30 +15,15 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
-      '@arethetypeswrong/core':
-        specifier: ^0.18.2
-        version: 0.18.2
       '@bjmhe/viteplus-preset':
-        specifier: 1.0.2
-        version: 1.0.2(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
+        specifier: ^1.0.3
+        version: 1.0.3(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
       '@types/node':
         specifier: ^25.6.0
         version: 25.9.1
       bumpp:
         specifier: ^11.0.1
         version: 11.1.0
-      publint:
-        specifier: ^0.3.21
-        version: 0.3.21
-      tsdown:
-        specifier: ^0.22.0
-        version: 0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)
-      tsdown-preset-sxzz:
-        specifier: ^0.6.0
-        version: 0.6.0(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))
-      tsnapi:
-        specifier: ^0.3.3
-        version: 0.3.3
       typescript:
         specifier: ^6.0.2
         version: 6.0.3
@@ -76,8 +61,8 @@ packages:
     resolution: {integrity: sha512-bw30DV880P/VYtsjWWdoWmJpb9S2Vn1/PqayyccTELzRQ/HslIO7+BD9rNoZ4AAFOAjC1vrNeBCkAsyh6Ibfww==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
-  '@bjmhe/viteplus-preset@1.0.2':
-    resolution: {integrity: sha512-lYSk07RANnZe4NLa36TTteYROSAmJmpI2hrcUXtkg0At9PzBLGlKCVl7jOL5GkFyoSQ/N+1p8XMJ8zHnb+S9eg==}
+  '@bjmhe/viteplus-preset@1.0.3':
+    resolution: {integrity: sha512-SSD4hVTxn01LdICC0RESt3vjvpHyfb25YaMG90Lx/WCyxrA7TSYQiNx7ZXHaONOTh1uzZxtyw7kOir8G5pJQVw==}
     peerDependencies:
       '@arethetypeswrong/core': ^0.18.2
       publint: ^0.3.21
@@ -1835,12 +1820,6 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
 
-  tsdown-preset-sxzz@0.6.0:
-    resolution: {integrity: sha512-K2oQ/l+ctnbOzK38WnF74I7txbtMXboZOl3TYqRFhxkM/Z04BP90w3+xef6BAU+uFWYqPQEKXXInxhAaXeSTZw==}
-    engines: {node: '>=20.19.0'}
-    peerDependencies:
-      tsdown: ^0.22.0
-
   tsdown@0.22.0:
     resolution: {integrity: sha512-FgW0hHb27nGQA/+F3d5+U9wKXkfilk9DVkc5+7x/ZqF03g+Hoz/eeApT32jqxATt9eRoR+1jxk7MUMON+O4CXw==}
     engines: {node: ^22.18.0 || >=24.0.0}
@@ -2064,7 +2043,7 @@ snapshots:
       '@babel/helper-string-parser': 8.0.0-rc.4
       '@babel/helper-validator-identifier': 8.0.0-rc.4
 
-  '@bjmhe/viteplus-preset@1.0.2(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
+  '@bjmhe/viteplus-preset@1.0.3(@arethetypeswrong/core@0.18.2)(publint@0.3.21)(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7))(tsnapi@0.3.3)(unplugin-unused@0.5.7)(vite-plus@0.1.22(@arethetypeswrong/core@0.18.2)(@types/node@25.9.1)(jiti@2.7.0)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)(vite@8.0.14(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))':
     dependencies:
       '@arethetypeswrong/core': 0.18.2
       publint: 0.3.21
@@ -3486,12 +3465,6 @@ snapshots:
       punycode: 2.3.1
 
   tree-kill@1.2.2: {}
-
-  tsdown-preset-sxzz@0.6.0(tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)):
-    dependencies:
-      '@arethetypeswrong/core': 0.18.2
-      publint: 0.3.21
-      tsdown: 0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7)
 
   tsdown@0.22.0(@arethetypeswrong/core@0.18.2)(@typescript/native-preview@7.0.0-dev.20260509.2)(publint@0.3.21)(typescript@6.0.3)(unplugin-unused@0.5.7):
     dependencies:
