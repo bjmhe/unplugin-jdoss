@@ -10,14 +10,14 @@ import { Starter } from "./index";
  * Farm plugin
  *
  * @example
- * ```ts
- * // farm.config.js
- * import Starter from 'unplugin-jdoss/farm'
+ *   ```ts
+ *   // farm.config.js
+ *   import Starter from "unplugin-jdoss/farm";
  *
- * export default {
- *   plugins: [Starter()],
- * }
- * ```
+ *   export default {
+ *     plugins: [Starter()],
+ *   };
+ *   ```;
  */
 const farm = Starter.farm as typeof Starter.farm;
 export default farm;

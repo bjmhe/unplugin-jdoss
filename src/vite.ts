@@ -10,14 +10,14 @@ import { Starter } from "./index";
  * Vite plugin
  *
  * @example
- * ```ts
- * // vite.config.ts
- * import Starter from 'unplugin-jdoss/vite'
+ *   ```ts
+ *   // vite.config.ts
+ *   import Starter from "unplugin-jdoss/vite";
  *
- * export default defineConfig({
- *   plugins: [Starter()],
- * })
- * ```
+ *   export default defineConfig({
+ *     plugins: [Starter()],
+ *   });
+ *   ```;
  */
 const vite = Starter.vite as typeof Starter.vite;
 export default vite;

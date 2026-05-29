@@ -62,13 +62,9 @@
     "unplugin": "^3.0.0"
   },
   "devDependencies": {
-    "@arethetypeswrong/core": "^0.18.2",
+    "@bjmhe/viteplus-preset": "^1.0.2",
     "@types/node": "^25.6.0",
     "bumpp": "^11.0.1",
-    "publint": "^0.3.21",
-    "tsdown": "^0.22.0",
-    "tsdown-preset-sxzz": "^0.6.0",
-    "tsnapi": "^0.3.3",
     "typescript": "^6.0.2",
     "vite-plus": "^0.1.22"
   },

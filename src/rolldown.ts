@@ -10,14 +10,14 @@ import { Starter } from "./index";
  * Rolldown plugin
  *
  * @example
- * ```ts
- * // rolldown.config.js
- * import Starter from 'unplugin-jdoss/rolldown'
+ *   ```ts
+ *   // rolldown.config.js
+ *   import Starter from "unplugin-jdoss/rolldown";
  *
- * export default {
- *   plugins: [Starter()],
- * }
- * ```
+ *   export default {
+ *     plugins: [Starter()],
+ *   };
+ *   ```;
  */
 const rolldown = Starter.rolldown as typeof Starter.rolldown;
 export default rolldown;

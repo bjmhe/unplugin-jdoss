@@ -10,14 +10,14 @@ import { Starter } from "./index";
  * Webpack plugin
  *
  * @example
- * ```js
- * // webpack.config.js
- * import Starter from 'unplugin-jdoss/webpack'
+ *   ```js
+ *   // webpack.config.js
+ *   import Starter from "unplugin-jdoss/webpack";
  *
- * export default {
- *   plugins: [Starter()],
- * }
- * ```
+ *   export default {
+ *     plugins: [Starter()],
+ *   };
+ *   ```;
  */
 const webpack = Starter.webpack as typeof Starter.webpack;
 export default webpack;

@@ -10,14 +10,14 @@ import { Starter } from "./index";
  * Rspack plugin
  *
  * @example
- * ```js
- * // rspack.config.js
- * import Starter from 'unplugin-jdoss/rspack'
+ *   ```js
+ *   // rspack.config.js
+ *   import Starter from "unplugin-jdoss/rspack";
  *
- * export default {
- *   plugins: [Starter()],
- * }
- * ```
+ *   export default {
+ *     plugins: [Starter()],
+ *   };
+ *   ```;
  */
 const rspack = Starter.rspack as typeof Starter.rspack;
 export default rspack;

@@ -10,12 +10,12 @@ import { Starter } from "./index";
  * Esbuild plugin
  *
  * @example
- * ```ts
- * import { build } from 'esbuild'
- * import Starter from 'unplugin-jdoss/esbuild'
- * 
- * build({ plugins: [Starter()] })
-```
+ *   ```ts
+ *   import { build } from "esbuild";
+ *   import Starter from "unplugin-jdoss/esbuild";
+ *
+ *   build({ plugins: [Starter()] });
+ *   ```;
  */
 const esbuild = Starter.esbuild as typeof Starter.esbuild;
 export default esbuild;
